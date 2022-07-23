@@ -24,9 +24,11 @@ In this exercise we are assuming that you already have installed and know how to
     2. Flow
     3. Algorand
 - In this example we will navigate to the Ethereum module
-- In your terminal navigate to `cd hyperverse-mono/apps/ethereum/tribes`
+- In your terminal navigate to `cd hyperverse-mono/apps/ethereum/erc721`
 - Install project dependencies by typing `yarn` in your terminal
+  - if `yarn` does not work, then you can do `pnpm i`
 - Run the development server by typing `yarn dev` in your terminal
+  - or `pnpm dev` if using pnpm
 - On your browser go to `http://localhost:3000`
 
 
@@ -42,12 +44,12 @@ In this exercise we are assuming that you already have installed and know how to
 - Enter a token name *(a twitter username)*
 - Enter a token symbol *(initials)*
 - Click on `Create Instance`
-- Confirm the transaction in your wallet popup
+- Confirm the transaction in your wallet popup  
 
 
 ### Lets update some code
 - First we need to update the `tenantId` with the correct address - **_The `tenantId` points to the wallet address which created the instance and this is where it is pulling the data from_**
-- Open the ERC721 folder in the IDE at `hyperverse-mono/apps/ethereum/ERC721`
+- Open the ERC721 folder in the IDE at `hyperverse-mono/apps/ethereum/erc721`
 - Under `pages` open the `_app.tsx` file
 - Scroll down to `function MyApp` and change the address for `tenantId` to the address the instance was created with
 - Save the file
@@ -61,4 +63,4 @@ In this exercise we are assuming that you already have installed and know how to
 - Choose a file image - **_this will be put on IPFS_**
 - Click `Mint`
 - Confirm the transaction in your wallet popup
-- Under the `Token Functions` category, go to `Balance Of` and click `Get Balance Of` paste the address - **_this will show you how many tokens you have_**
+- Under the `Token Functions` category, go to `Balance Of` and click `Get Balance Of` paste the address - **_this will show you how many tokens you have_** 
